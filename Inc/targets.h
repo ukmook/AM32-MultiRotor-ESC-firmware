@@ -28,6 +28,7 @@
 //#define REF_F031
 //#define NEUTRON_G071
 //#define GEN_64K_G071
+//#define SW_64K_G071
 //#define PWM_ENABLE_G071
 //#define OPEN_DRAIN_G071
 //#define OPEN_DRAIN_B_G071
@@ -91,7 +92,7 @@
 #define DEAD_TIME               25
 #define HARDWARE_GROUP_F0_B
 #define USE_SERIAL_TELEMETRY
-#define VOLTAGE_BASED_RAMP      
+#define VOLTAGE_BASED_RAMP
 #endif
 
 #ifdef RAZOR32_F051
@@ -381,6 +382,17 @@
 #endif
 
 
+#ifdef SIDEWINDER_6S_200A
+#define FILE_NAME				"SIDEWINDER_6S_200A"
+#define FIRMWARE_NAME  			"qUark SideWinder G071"
+#define DEAD_TIME               60
+#define MILLIVOLT_PER_AMP       67
+#define CURRENT_OFFSET          0
+#define HARDWARE_GROUP_G0_G
+#define USE_SERIAL_TELEMETRY
+#endif
+
+
 #ifdef  GEN_128K_G071
 #define FILE_NAME				"GEN_128K_G071"
 #define FIRMWARE_NAME  			"G071 DevESC "
@@ -500,10 +512,10 @@
 
 #ifndef  	MILLIVOLT_PER_AMP
 #define     MILLIVOLT_PER_AMP           20
-#endif 
+#endif
 
 #ifndef 	CURRENT_OFFSET
-#define     CURRENT_OFFSET              0     // in millivolt measured at output of op-amp 
+#define     CURRENT_OFFSET              0     // in millivolt measured at output of op-amp
 #endif
 
 #ifndef TARGET_STALL_PROTECTION_INTERVAL
@@ -1406,15 +1418,3 @@
 	#define VOLTAGE_ADC_PIN LL_GPIO_PIN_6
 #endif
 #endif
-
-
-
-
-
-
-
-
-
-
-
-
