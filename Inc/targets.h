@@ -385,7 +385,7 @@
 
 #ifdef SIDEWINDER_200_G071
 #define FILE_NAME				"SIDEWINDER_200_G071"
-#define FIRMWARE_NAME  			"qUark SideWinder G071"
+#define FIRMWARE_NAME  			"SideWinder G071"
 #define DEAD_TIME               60
 #define MILLIVOLT_PER_AMP       67
 #define CURRENT_OFFSET          0
