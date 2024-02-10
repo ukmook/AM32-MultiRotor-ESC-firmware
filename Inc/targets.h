@@ -7,6 +7,7 @@
 //#define DAKEFPV_35A_F051
 //#define REPEAT_DRIVE_F051
 //#define HAKRC_2023_G071
+//#define SIDEWINDER_200_G071
 //#define TMOTOR55_F051    // like iflight but with leds
 //#define TMOTOR45_F051
 //#define HGLRC_F051
@@ -382,8 +383,8 @@
 #endif
 
 
-#ifdef SIDEWINDER_6S_200A
-#define FILE_NAME				"SIDEWINDER_6S_200A"
+#ifdef SIDEWINDER_200_G071
+#define FILE_NAME				"SIDEWINDER_200_G071"
 #define FIRMWARE_NAME  			"qUark SideWinder G071"
 #define DEAD_TIME               60
 #define MILLIVOLT_PER_AMP       67
