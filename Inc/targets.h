@@ -377,6 +377,7 @@
 #define DEAD_TIME               60
 #define MILLIVOLT_PER_AMP       67
 #define CURRENT_OFFSET          0
+#define TARGET_VOLTAGE_DIVIDER  193
 #define HARDWARE_GROUP_G0_G
 #define USE_SERIAL_TELEMETRY
 #define SIXTY_FOUR_KB_MEMORY
